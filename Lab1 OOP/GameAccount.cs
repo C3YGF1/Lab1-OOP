@@ -41,7 +41,7 @@ namespace Lab1_OOP
             GameIndex++;
             if (CurrentRating - 20 <= 0)
             {
-                throw new InvalidOperationException("Rating cannot be less than 0");
+                CurrentRating = 1;
             }
             else CurrentRating -= 20;
             if (CurrentRating <= 0)
